@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title> ROWSPANING</title>
+    </head>
+    <!--demo: colspan and rowspan-->
+    <Body bgcolor="lightyellow">
+        <header align="center">
+            <h1>PRACTICE 12</h1>
+        </header>
+        <table border="4" width="400" height="300" align="center" bgcolor="skyblue" cellpading="10" cellspacing="5">
+            <tr>
+                <td rowspan="2" colspan="2" align="center"> 1 </td>
+                <td colspan="2" align="center">2</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">3</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">4</td>
+                <td colspan="2" align="center">5</td>
+            </tr>
+            <tr>
+                <td align="center">6</td>
+                <td align="center">7</td>
+                <td align="center">8</td>
+                <td align="center">9</td>
+
+            </tr>
+            <tr align="center">
+                <td>10</td>
+                <td colspan="2">11</td>
+                <td>12</td>
+            </tr>
+        </table>
+    </table>
+
+    <!-- Demo: cellpadding and cellspacing -->
+    <hr>
+    <section align="center">
+        <h2>Table spacing demo</h2>
+        <p>This example shows a table with <code>cellpadding</code> (space inside cells)
+        and <code>cellspacing</code> (space between cells). Below it is a table without
+        those attributes for comparison.</p>
+
+        <h3>With cellpadding="12" and cellspacing="8"</h3>
+        <table border="1" cellpadding="12" cellspacing="8" align="center">
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Cell A1</td>
+                <td>Cell A2</td>
+            </tr>
+            <tr>
+                <td>Cell B1</td>
+                <td>Cell B2</td>
+            </tr>
+        </table>
+
+        <h3>Without cellpadding / cellspacing (default)</h3>
+        <table border="1" align="center">
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Cell A1</td>
+                <td>Cell A2</td>
+            </tr>
+            <tr>
+                <td>Cell B1</td>
+                <td>Cell B2</td>
+            </tr>
+        </table>
+
+        <p style="max-width:600px; text-align:left; margin:12px auto;">
+            Note: In HTML5 the <code>cellpadding</code> and <code>cellspacing</code> attributes
+            are considered presentational and CSS (for example, <code>padding</code> on
+            <code>td</code> and <code>border-spacing</code>) is preferred. However,
+            these attributes still work in most browsers and are shown here for learning.
+        </p>
+    </section>
+
+    </Body>
+
+</html>
