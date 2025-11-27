@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+        <title> My Calculator</title>
+
+        <script>
+            function appendVal(x)
+            {
+                y=document.getElementById('total').value;
+                document.getElementById('total').value=y + x;
+            }
+            function calculate()
+            {
+                x=document.getElementById('total').value;
+                document.getElementById('total').value =eval(x);
+            }
+        </script>
+    </Head>
+
+    <table border="3">
+        <tr>
+            <td colspan="5"><input type="text" id="total"></td>
+        </tr>
+
+         <tr>
+            <td ><input type="button" value="+" onclick="appendVal('+')"></td>
+            <td ><input type="button" value="-"onclick="appendVal('-')"></td>
+            <td ><input type="button" value="*"onclick="appendVal('*')"></td>
+            <td ><input type="button" value="/"onclick="appendVal('/')"></td>
+            <td ><input type="button" value="c" style="color:blue;"></td>
+             
+        </tr>
+         <tr>
+            <td ><input type="button" value="9"onclick="appendVal('9')"></td>
+            <td ><input type="button" value="8"onclick="appendVal('8')"></td>
+            <td ><input type="button" value="7"onclick="appendVal('7')"></td>
+            <td><input type="button" value="6"onclick="appendVal('6')"></td>
+            <td rowspan="3"><input type="button" value="=" style="height:100px;"onClick="calculate()"></td>
+        </tr>
+        <tr>
+            <td ><input type="button" value="5"onclick="appendVal('5')"></td>
+            <td ><input type="button" value="4"onclick="appendVal('4')"></td>
+            <td ><input type="button" value="3"onclick="appendVal('3')"></td>
+            <td ><input type="button" value="2"onclick="appendVal('2')"></td>
+            
+        </tr>
+        <tr>
+            <td ><input type="button" value="1"onclick="appendVal('1')"></td>
+            <td colspan="3"><input type="button" value="0" style="width: 50px;"onclick="appendVal('0')"></td>
+        </tr>
+    </table>
+</html>
+
